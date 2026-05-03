@@ -1,0 +1,18 @@
+[project]
+name = "quant-options-ml"
+version = "0.1.0"
+description = "COMP499 - Capstone Project"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "alpaca-py==0.43.3",
+    "betacal>=1.1.0",
+    "httpx>=0.28.1",
+    "joblib>=1.5.3",
+    "lightgbm>=4.6.0",
+    "pandas>=3.0.2",
+    "pyarrow>=23.0.1",
+    "scikit-learn>=1.8.0",
+    "torch>=2.11.0",
+    "yfinance>=1.2.0",
+]

@@ -1,0 +1,1832 @@
+{
+  "validation_date": "2026-02-07T20:17:55.613840",
+  "total_files": 96,
+  "total_rows": 1590043262,
+  "total_size_mb": 49340.55,
+  "results": [
+    {
+      "file": "2018_01.parquet",
+      "success": true,
+      "rows": 7543940,
+      "columns": 28,
+      "size_mb": 209.7809934616089,
+      "date_range": [
+        "2018-01-02 00:00:00",
+        "2018-01-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.9267132294265331,
+      "volume_gt_0": "671583",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_02.parquet",
+      "success": true,
+      "rows": 10724220,
+      "columns": 28,
+      "size_mb": 332.345009803772,
+      "date_range": [
+        "2018-02-01 00:00:00",
+        "2018-02-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.9313422328150672,
+      "volume_gt_0": "984266",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_03.parquet",
+      "success": true,
+      "rows": 11039308,
+      "columns": 28,
+      "size_mb": 332.015025138855,
+      "date_range": [
+        "2018-03-01 00:00:00",
+        "2018-03-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9300447093241714,
+      "volume_gt_0": "1012657",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_04.parquet",
+      "success": true,
+      "rows": 11762806,
+      "columns": 28,
+      "size_mb": 354.2952175140381,
+      "date_range": [
+        "2018-04-02 00:00:00",
+        "2018-04-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9295691011141389,
+      "volume_gt_0": "992857",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_05.parquet",
+      "success": true,
+      "rows": 12098950,
+      "columns": 28,
+      "size_mb": 354.31742668151855,
+      "date_range": [
+        "2018-05-01 00:00:00",
+        "2018-05-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9379982560470124,
+      "volume_gt_0": "839965",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_06.parquet",
+      "success": true,
+      "rows": 10060812,
+      "columns": 28,
+      "size_mb": 284.43556690216064,
+      "date_range": [
+        "2018-06-01 00:00:00",
+        "2018-06-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9386286116866114,
+      "volume_gt_0": "658952",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_07.parquet",
+      "success": true,
+      "rows": 9689401,
+      "columns": 28,
+      "size_mb": 271.43573665618896,
+      "date_range": [
+        "2018-07-02 00:00:00",
+        "2018-07-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9427581746281323,
+      "volume_gt_0": "581114",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_08.parquet",
+      "success": true,
+      "rows": 10670903,
+      "columns": 28,
+      "size_mb": 297.3047103881836,
+      "date_range": [
+        "2018-08-01 00:00:00",
+        "2018-08-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9374926376896126,
+      "volume_gt_0": "669639",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_09.parquet",
+      "success": true,
+      "rows": 8385950,
+      "columns": 28,
+      "size_mb": 235.45890140533447,
+      "date_range": [
+        "2018-09-04 00:00:00",
+        "2018-09-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9264990847787072,
+      "volume_gt_0": "536153",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_10.parquet",
+      "success": true,
+      "rows": 14178397,
+      "columns": 28,
+      "size_mb": 434.4438180923462,
+      "date_range": [
+        "2018-10-01 00:00:00",
+        "2018-10-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9186609036268345,
+      "volume_gt_0": "1210762",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_11.parquet",
+      "success": true,
+      "rows": 13840711,
+      "columns": 28,
+      "size_mb": 417.94976711273193,
+      "date_range": [
+        "2018-11-01 00:00:00",
+        "2018-11-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9504628772322462,
+      "volume_gt_0": "1036832",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2018_12.parquet",
+      "success": true,
+      "rows": 13744017,
+      "columns": 28,
+      "size_mb": 423.46170806884766,
+      "date_range": [
+        "2018-12-03 00:00:00",
+        "2018-12-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9954882186190543,
+      "volume_gt_0": "1277106",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_01.parquet",
+      "success": true,
+      "rows": 13865101,
+      "columns": 28,
+      "size_mb": 408.61379528045654,
+      "date_range": [
+        "2019-01-02 00:00:00",
+        "2019-01-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1010011",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_02.parquet",
+      "success": true,
+      "rows": 11003008,
+      "columns": 28,
+      "size_mb": 315.4453296661377,
+      "date_range": [
+        "2019-02-01 00:00:00",
+        "2019-02-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        58
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "732310",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_03.parquet",
+      "success": true,
+      "rows": 11295486,
+      "columns": 28,
+      "size_mb": 328.86224365234375,
+      "date_range": [
+        "2019-03-01 00:00:00",
+        "2019-03-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "927993",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_04.parquet",
+      "success": true,
+      "rows": 10875634,
+      "columns": 28,
+      "size_mb": 302.70497608184814,
+      "date_range": [
+        "2019-04-01 00:00:00",
+        "2019-04-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "698304",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_05.parquet",
+      "success": true,
+      "rows": 12662744,
+      "columns": 28,
+      "size_mb": 378.8691568374634,
+      "date_range": [
+        "2019-05-01 00:00:00",
+        "2019-05-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1229939",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_06.parquet",
+      "success": true,
+      "rows": 11687147,
+      "columns": 28,
+      "size_mb": 332.11915588378906,
+      "date_range": [
+        "2019-06-03 00:00:00",
+        "2019-06-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "903315",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_07.parquet",
+      "success": true,
+      "rows": 11880787,
+      "columns": 28,
+      "size_mb": 332.66976737976074,
+      "date_range": [
+        "2019-07-01 00:00:00",
+        "2019-07-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "837821",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_08.parquet",
+      "success": true,
+      "rows": 14268888,
+      "columns": 28,
+      "size_mb": 429.50968742370605,
+      "date_range": [
+        "2019-08-01 00:00:00",
+        "2019-08-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1514253",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_09.parquet",
+      "success": true,
+      "rows": 12219122,
+      "columns": 28,
+      "size_mb": 350.7141284942627,
+      "date_range": [
+        "2019-09-03 00:00:00",
+        "2019-09-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1024154",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_10.parquet",
+      "success": true,
+      "rows": 13139894,
+      "columns": 28,
+      "size_mb": 378.40063190460205,
+      "date_range": [
+        "2019-10-01 00:00:00",
+        "2019-10-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1197550",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_11.parquet",
+      "success": true,
+      "rows": 11915689,
+      "columns": 28,
+      "size_mb": 329.48209857940674,
+      "date_range": [
+        "2019-11-01 00:00:00",
+        "2019-11-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "812971",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2019_12.parquet",
+      "success": true,
+      "rows": 13202863,
+      "columns": 28,
+      "size_mb": 369.0691146850586,
+      "date_range": [
+        "2019-12-02 00:00:00",
+        "2019-12-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "840859",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_01.parquet",
+      "success": true,
+      "rows": 12737472,
+      "columns": 28,
+      "size_mb": 372.1336889266968,
+      "date_range": [
+        "2020-01-02 00:00:00",
+        "2020-01-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1058339",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_02.parquet",
+      "success": true,
+      "rows": 14766643,
+      "columns": 28,
+      "size_mb": 450.8524913787842,
+      "date_range": [
+        "2020-02-03 00:00:00",
+        "2020-02-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.9999735891224566,
+      "volume_gt_0": "1383476",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_03.parquet",
+      "success": true,
+      "rows": 27777460,
+      "columns": 28,
+      "size_mb": 985.7829475402832,
+      "date_range": [
+        "2020-03-02 00:00:00",
+        "2020-03-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9999859598393805,
+      "volume_gt_0": "3420412",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_04.parquet",
+      "success": true,
+      "rows": 21646174,
+      "columns": 28,
+      "size_mb": 679.5247240066528,
+      "date_range": [
+        "2020-04-01 00:00:00",
+        "2020-04-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2306065",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_05.parquet",
+      "success": true,
+      "rows": 19424541,
+      "columns": 28,
+      "size_mb": 593.2561159133911,
+      "date_range": [
+        "2020-05-01 00:00:00",
+        "2020-05-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1839870",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_06.parquet",
+      "success": true,
+      "rows": 22234639,
+      "columns": 28,
+      "size_mb": 691.6287670135498,
+      "date_range": [
+        "2020-06-01 00:00:00",
+        "2020-06-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2317645",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_07.parquet",
+      "success": true,
+      "rows": 18255908,
+      "columns": 28,
+      "size_mb": 541.8335189819336,
+      "date_range": [
+        "2020-07-01 00:00:00",
+        "2020-07-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1589375",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_08.parquet",
+      "success": true,
+      "rows": 18292861,
+      "columns": 28,
+      "size_mb": 536.5697345733643,
+      "date_range": [
+        "2020-08-03 00:00:00",
+        "2020-08-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1362469",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_09.parquet",
+      "success": true,
+      "rows": 17815303,
+      "columns": 28,
+      "size_mb": 550.1583585739136,
+      "date_range": [
+        "2020-09-01 00:00:00",
+        "2020-09-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1811090",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_10.parquet",
+      "success": true,
+      "rows": 17282859,
+      "columns": 28,
+      "size_mb": 524.4790477752686,
+      "date_range": [
+        "2020-10-01 00:00:00",
+        "2020-10-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1677864",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_11.parquet",
+      "success": true,
+      "rows": 18901061,
+      "columns": 28,
+      "size_mb": 575.0933876037598,
+      "date_range": [
+        "2020-11-02 00:00:00",
+        "2020-11-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1571276",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2020_12.parquet",
+      "success": true,
+      "rows": 17110260,
+      "columns": 28,
+      "size_mb": 512.7696008682251,
+      "date_range": [
+        "2020-12-01 00:00:00",
+        "2020-12-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9998404466092274,
+      "volume_gt_0": "1402079",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_01.parquet",
+      "success": true,
+      "rows": 15895820,
+      "columns": 28,
+      "size_mb": 484.14836978912354,
+      "date_range": [
+        "2021-01-04 00:00:00",
+        "2021-01-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1490163",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_02.parquet",
+      "success": true,
+      "rows": 17612687,
+      "columns": 28,
+      "size_mb": 533.9767560958862,
+      "date_range": [
+        "2021-02-01 00:00:00",
+        "2021-02-26 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.9957263761060422,
+      "volume_gt_0": "1455287",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_03.parquet",
+      "success": true,
+      "rows": 18021275,
+      "columns": 28,
+      "size_mb": 552.8140325546265,
+      "date_range": [
+        "2021-03-01 00:00:00",
+        "2021-03-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1822997",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_04.parquet",
+      "success": true,
+      "rows": 16120709,
+      "columns": 28,
+      "size_mb": 475.15991497039795,
+      "date_range": [
+        "2021-04-01 00:00:00",
+        "2021-04-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1426322",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_05.parquet",
+      "success": true,
+      "rows": 18509682,
+      "columns": 28,
+      "size_mb": 560.006326675415,
+      "date_range": [
+        "2021-05-03 00:00:00",
+        "2021-05-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1532474",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_06.parquet",
+      "success": true,
+      "rows": 17640629,
+      "columns": 28,
+      "size_mb": 514.3398294448853,
+      "date_range": [
+        "2021-06-01 00:00:00",
+        "2021-06-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1299050",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_07.parquet",
+      "success": true,
+      "rows": 18579536,
+      "columns": 28,
+      "size_mb": 552.429928779602,
+      "date_range": [
+        "2021-07-01 00:00:00",
+        "2021-07-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1551589",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_08.parquet",
+      "success": true,
+      "rows": 20059134,
+      "columns": 28,
+      "size_mb": 594.9703130722046,
+      "date_range": [
+        "2021-08-02 00:00:00",
+        "2021-08-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1475958",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_09.parquet",
+      "success": true,
+      "rows": 19420956,
+      "columns": 28,
+      "size_mb": 601.807050704956,
+      "date_range": [
+        "2021-09-01 00:00:00",
+        "2021-09-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1843533",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_10.parquet",
+      "success": true,
+      "rows": 19442200,
+      "columns": 28,
+      "size_mb": 582.0349617004395,
+      "date_range": [
+        "2021-10-01 00:00:00",
+        "2021-10-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1693290",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_11.parquet",
+      "success": true,
+      "rows": 19608254,
+      "columns": 28,
+      "size_mb": 590.2419061660767,
+      "date_range": [
+        "2021-11-01 00:00:00",
+        "2021-11-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1607104",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2021_12.parquet",
+      "success": true,
+      "rows": 19924628,
+      "columns": 28,
+      "size_mb": 630.7080097198486,
+      "date_range": [
+        "2021-12-01 00:00:00",
+        "2021-12-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "1946297",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_01.parquet",
+      "success": true,
+      "rows": 18616258,
+      "columns": 28,
+      "size_mb": 607.2376909255981,
+      "date_range": [
+        "2022-01-03 00:00:00",
+        "2022-01-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2176036",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_02.parquet",
+      "success": true,
+      "rows": 20376816,
+      "columns": 28,
+      "size_mb": 669.5322360992432,
+      "date_range": [
+        "2022-02-01 00:00:00",
+        "2022-02-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2305803",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_03.parquet",
+      "success": true,
+      "rows": 23410465,
+      "columns": 28,
+      "size_mb": 760.4236125946045,
+      "date_range": [
+        "2022-03-01 00:00:00",
+        "2022-03-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2518221",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_04.parquet",
+      "success": true,
+      "rows": 17862075,
+      "columns": 28,
+      "size_mb": 560.6930637359619,
+      "date_range": [
+        "2022-04-01 00:00:00",
+        "2022-04-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2011489",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_05.parquet",
+      "success": true,
+      "rows": 23219309,
+      "columns": 28,
+      "size_mb": 771.60120677948,
+      "date_range": [
+        "2022-05-02 00:00:00",
+        "2022-05-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2739883",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_06.parquet",
+      "success": true,
+      "rows": 21897242,
+      "columns": 28,
+      "size_mb": 708.0834970474243,
+      "date_range": [
+        "2022-06-01 00:00:00",
+        "2022-06-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2533461",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_07.parquet",
+      "success": true,
+      "rows": 18586627,
+      "columns": 28,
+      "size_mb": 581.0193586349487,
+      "date_range": [
+        "2022-07-01 00:00:00",
+        "2022-07-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2201549",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_08.parquet",
+      "success": true,
+      "rows": 22117703,
+      "columns": 28,
+      "size_mb": 687.2623538970947,
+      "date_range": [
+        "2022-08-01 00:00:00",
+        "2022-08-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2377043",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_09.parquet",
+      "success": true,
+      "rows": 20811571,
+      "columns": 28,
+      "size_mb": 672.2087078094482,
+      "date_range": [
+        "2022-09-01 00:00:00",
+        "2022-09-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2878411",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_10.parquet",
+      "success": true,
+      "rows": 20747647,
+      "columns": 28,
+      "size_mb": 659.3837356567383,
+      "date_range": [
+        "2022-10-03 00:00:00",
+        "2022-10-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 1.0,
+      "volume_gt_0": "2823844",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_11.parquet",
+      "success": true,
+      "rows": 20541497,
+      "columns": 28,
+      "size_mb": 638.5299797058105,
+      "date_range": [
+        "2022-11-01 00:00:00",
+        "2022-11-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9809471042933239,
+      "volume_gt_0": "2528432",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2022_12.parquet",
+      "success": true,
+      "rows": 17185376,
+      "columns": 28,
+      "size_mb": 535.8032464981079,
+      "date_range": [
+        "2022-12-01 00:00:00",
+        "2022-12-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9414847251523621,
+      "volume_gt_0": "2487254",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_01.parquet",
+      "success": true,
+      "rows": 15556380,
+      "columns": 28,
+      "size_mb": 476.3517608642578,
+      "date_range": [
+        "2023-01-03 00:00:00",
+        "2023-01-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.942159744104991,
+      "volume_gt_0": "2406490",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_02.parquet",
+      "success": true,
+      "rows": 15201692,
+      "columns": 28,
+      "size_mb": 471.00428009033203,
+      "date_range": [
+        "2023-02-01 00:00:00",
+        "2023-02-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.9442585075398185,
+      "volume_gt_0": "2335933",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_03.parquet",
+      "success": true,
+      "rows": 18959350,
+      "columns": 28,
+      "size_mb": 589.937313079834,
+      "date_range": [
+        "2023-03-01 00:00:00",
+        "2023-03-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.945451030757911,
+      "volume_gt_0": "2995431",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_04.parquet",
+      "success": true,
+      "rows": 13841338,
+      "columns": 28,
+      "size_mb": 416.81852436065674,
+      "date_range": [
+        "2023-04-03 00:00:00",
+        "2023-04-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9411999764762626,
+      "volume_gt_0": "1907158",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_05.parquet",
+      "success": true,
+      "rows": 16423011,
+      "columns": 28,
+      "size_mb": 503.4447135925293,
+      "date_range": [
+        "2023-05-01 00:00:00",
+        "2023-05-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9482141246815216,
+      "volume_gt_0": "2287684",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_06.parquet",
+      "success": true,
+      "rows": 14600423,
+      "columns": 28,
+      "size_mb": 447.1633234024048,
+      "date_range": [
+        "2023-06-01 00:00:00",
+        "2023-06-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.9455763713147215,
+      "volume_gt_0": "1997122",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_07.parquet",
+      "success": true,
+      "rows": 15621457,
+      "columns": 28,
+      "size_mb": 463.75878715515137,
+      "date_range": [
+        "2023-07-03 00:00:00",
+        "2023-07-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9449868856662986,
+      "volume_gt_0": "1830777",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_08.parquet",
+      "success": true,
+      "rows": 20292827,
+      "columns": 28,
+      "size_mb": 629.3477277755737,
+      "date_range": [
+        "2023-08-01 00:00:00",
+        "2023-08-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9510769002268634,
+      "volume_gt_0": "2472830",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_09.parquet",
+      "success": true,
+      "rows": 13848249,
+      "columns": 28,
+      "size_mb": 420.26945209503174,
+      "date_range": [
+        "2023-09-01 00:00:00",
+        "2023-09-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9407319293580004,
+      "volume_gt_0": "1876089",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_10.parquet",
+      "success": true,
+      "rows": 16824291,
+      "columns": 28,
+      "size_mb": 520.1590204238892,
+      "date_range": [
+        "2023-10-02 00:00:00",
+        "2023-10-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9433319953869082,
+      "volume_gt_0": "2504867",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_11.parquet",
+      "success": true,
+      "rows": 15702256,
+      "columns": 28,
+      "size_mb": 474.79224967956543,
+      "date_range": [
+        "2023-11-01 00:00:00",
+        "2023-11-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.950981247535386,
+      "volume_gt_0": "1879329",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2023_12.parquet",
+      "success": true,
+      "rows": 14918543,
+      "columns": 28,
+      "size_mb": 462.6470060348511,
+      "date_range": [
+        "2023-12-01 00:00:00",
+        "2023-12-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9501148336000372,
+      "volume_gt_0": "1642632",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_01.parquet",
+      "success": true,
+      "rows": 15798969,
+      "columns": 28,
+      "size_mb": 488.9626178741455,
+      "date_range": [
+        "2024-01-02 00:00:00",
+        "2024-01-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.9566934399326943,
+      "volume_gt_0": "1874064",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_02.parquet",
+      "success": true,
+      "rows": 15109558,
+      "columns": 28,
+      "size_mb": 469.35462951660156,
+      "date_range": [
+        "2024-02-01 00:00:00",
+        "2024-02-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        59
+      ],
+      "oi_coverage": 0.950374458339549,
+      "volume_gt_0": "1847975",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_03.parquet",
+      "success": true,
+      "rows": 14948249,
+      "columns": 28,
+      "size_mb": 462.1757745742798,
+      "date_range": [
+        "2024-03-01 00:00:00",
+        "2024-03-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9537102305427211,
+      "volume_gt_0": "1794022",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_04.parquet",
+      "success": true,
+      "rows": 17374169,
+      "columns": 28,
+      "size_mb": 556.0136737823486,
+      "date_range": [
+        "2024-04-01 00:00:00",
+        "2024-04-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.955806231653439,
+      "volume_gt_0": "2364849",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_05.parquet",
+      "success": true,
+      "rows": 15342073,
+      "columns": 28,
+      "size_mb": 472.6609125137329,
+      "date_range": [
+        "2024-05-01 00:00:00",
+        "2024-05-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9501744646893545,
+      "volume_gt_0": "1913660",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_06.parquet",
+      "success": true,
+      "rows": 13299071,
+      "columns": 28,
+      "size_mb": 412.4837713241577,
+      "date_range": [
+        "2024-06-03 00:00:00",
+        "2024-06-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9492500641586168,
+      "volume_gt_0": "1581685",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_07.parquet",
+      "success": true,
+      "rows": 16137288,
+      "columns": 28,
+      "size_mb": 506.36992168426514,
+      "date_range": [
+        "2024-07-01 00:00:00",
+        "2024-07-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9487097832052077,
+      "volume_gt_0": "2066951",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_08.parquet",
+      "success": true,
+      "rows": 19007946,
+      "columns": 28,
+      "size_mb": 625.1521301269531,
+      "date_range": [
+        "2024-08-01 00:00:00",
+        "2024-08-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.940707428356541,
+      "volume_gt_0": "2587063",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_09.parquet",
+      "success": true,
+      "rows": 17456492,
+      "columns": 28,
+      "size_mb": 568.7241802215576,
+      "date_range": [
+        "2024-09-03 00:00:00",
+        "2024-09-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9433411363520231,
+      "volume_gt_0": "2341521",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_10.parquet",
+      "success": true,
+      "rows": 18775446,
+      "columns": 28,
+      "size_mb": 592.7485294342041,
+      "date_range": [
+        "2024-10-01 00:00:00",
+        "2024-10-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9429520875296384,
+      "volume_gt_0": "2270074",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_11.parquet",
+      "success": true,
+      "rows": 16336991,
+      "columns": 28,
+      "size_mb": 519.7922563552856,
+      "date_range": [
+        "2024-11-01 00:00:00",
+        "2024-11-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9444798004724371,
+      "volume_gt_0": "1851794",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2024_12.parquet",
+      "success": true,
+      "rows": 16292795,
+      "columns": 28,
+      "size_mb": 525.7193870544434,
+      "date_range": [
+        "2024-12-02 00:00:00",
+        "2024-12-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9549926209714171,
+      "volume_gt_0": "1875141",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_01.parquet",
+      "success": true,
+      "rows": 16085468,
+      "columns": 28,
+      "size_mb": 522.6565942764282,
+      "date_range": [
+        "2025-01-02 00:00:00",
+        "2025-01-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.936705105502681,
+      "volume_gt_0": "2182157",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_02.parquet",
+      "success": true,
+      "rows": 15598030,
+      "columns": 28,
+      "size_mb": 516.4707174301147,
+      "date_range": [
+        "2025-02-03 00:00:00",
+        "2025-02-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        58
+      ],
+      "oi_coverage": 0.949233589113497,
+      "volume_gt_0": "2061236",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_03.parquet",
+      "success": true,
+      "rows": 22342843,
+      "columns": 28,
+      "size_mb": 768.2948198318481,
+      "date_range": [
+        "2025-03-03 00:00:00",
+        "2025-03-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.947469755751316,
+      "volume_gt_0": "3080617",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_04.parquet",
+      "success": true,
+      "rows": 23143386,
+      "columns": 28,
+      "size_mb": 831.3379802703857,
+      "date_range": [
+        "2025-04-01 00:00:00",
+        "2025-04-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9356054468434307,
+      "volume_gt_0": "3716496",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_05.parquet",
+      "success": true,
+      "rows": 20865879,
+      "columns": 28,
+      "size_mb": 691.1669607162476,
+      "date_range": [
+        "2025-05-01 00:00:00",
+        "2025-05-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9434602779015444,
+      "volume_gt_0": "2689245",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_06.parquet",
+      "success": true,
+      "rows": 18185503,
+      "columns": 28,
+      "size_mb": 592.9914407730103,
+      "date_range": [
+        "2025-06-02 00:00:00",
+        "2025-06-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9564764307041713,
+      "volume_gt_0": "2230129",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_07.parquet",
+      "success": true,
+      "rows": 17647943,
+      "columns": 28,
+      "size_mb": 553.0171489715576,
+      "date_range": [
+        "2025-07-01 00:00:00",
+        "2025-07-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9446396670705476,
+      "volume_gt_0": "2015841",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_08.parquet",
+      "success": true,
+      "rows": 16475816,
+      "columns": 28,
+      "size_mb": 532.5473108291626,
+      "date_range": [
+        "2025-08-01 00:00:00",
+        "2025-08-29 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9501349735879546,
+      "volume_gt_0": "2087533",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_09.parquet",
+      "success": true,
+      "rows": 18979296,
+      "columns": 28,
+      "size_mb": 599.4132823944092,
+      "date_range": [
+        "2025-09-02 00:00:00",
+        "2025-09-30 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9455788033444444,
+      "volume_gt_0": "2076930",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_10.parquet",
+      "success": true,
+      "rows": 20675383,
+      "columns": 28,
+      "size_mb": 664.8577585220337,
+      "date_range": [
+        "2025-10-01 00:00:00",
+        "2025-10-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9447789673352122,
+      "volume_gt_0": "2591432",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_11.parquet",
+      "success": true,
+      "rows": 18944133,
+      "columns": 28,
+      "size_mb": 631.4048652648926,
+      "date_range": [
+        "2025-11-03 00:00:00",
+        "2025-11-28 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9466602140092661,
+      "volume_gt_0": "2493897",
+      "issues": [],
+      "status": "\u2705 PASS"
+    },
+    {
+      "file": "2025_12.parquet",
+      "success": true,
+      "rows": 19221663,
+      "columns": 28,
+      "size_mb": 618.3326816558838,
+      "date_range": [
+        "2025-12-01 00:00:00",
+        "2025-12-31 00:00:00"
+      ],
+      "dte_range": [
+        0,
+        60
+      ],
+      "oi_coverage": 0.9519123813584703,
+      "volume_gt_0": "2160982",
+      "issues": [],
+      "status": "\u2705 PASS"
+    }
+  ]
+}

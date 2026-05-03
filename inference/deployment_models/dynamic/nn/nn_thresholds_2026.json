@@ -1,0 +1,7 @@
+{
+  "threshold": 0.52,
+  "hc_threshold": 0.53,
+  "breakeven_floor": 0.41666666666666663,
+  "mc_dropout_passes": 5,
+  "blend_alpha": 0.6
+}
