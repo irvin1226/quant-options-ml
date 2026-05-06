@@ -7,8 +7,6 @@ MIN_PERIODS = 30
 
 
 def _compute_fwd_spike(atmExp):
-    # Exact replica of preprocess.py _compute_fwd_spike.
-    # atmExp must have columns: dte, T, total_var - sorted by dte ascending.
     g = atmExp.sort_values('dte')
     Ts = g['T'].values
     tvs = g['total_var'].values
@@ -75,21 +73,16 @@ def _add_daily_features(df, historyPath, atmIv):
     history = pd.read_csv(historyPath, parse_dates=['date'])
     history = history.sort_values('date').reset_index(drop=True)
 
-    # iv_rank: append today's atm_iv to the series and rank the last entry,
-    # matching the rolling rank in preprocess.py Pass 1.
     todayAtmIv = atmIv if atmIv is not None else np.nan
     ivSeries = pd.concat([history['atm_iv'], pd.Series([todayAtmIv])], ignore_index=True)
     ivRankSeries = ivSeries.rolling(ROLLING_WINDOW, min_periods=MIN_PERIODS).rank(pct=True)
     todayIvRank = ivRankSeries.iloc[-1]
     df['iv_rank'] = float(todayIvRank) if not np.isnan(todayIvRank) else 0.0
 
-    # intraday_churn_ratio: yesterday's value - matches shift(1) in preprocess.py Pass 3.
     history['churn_ratio'] = history['realized_abs_sum'] / history['net_move'].clip(lower=1e-8)
     yesterdayChurn = history['churn_ratio'].iloc[-1] if len(history) > 0 else 0.0
     df['intraday_churn_ratio'] = float(yesterdayChurn) if not np.isnan(yesterdayChurn) else 0.0
 
-    # prev_day_realized_vol_rank: rolling rank of yesterday's daily_rv -
-    # matches shift(1) + rolling rank in preprocess.py Pass 3.
     history['prev_day_rv'] = history['daily_rv'].shift(1)
     rvRankSeries = (
         history['prev_day_rv']
@@ -103,8 +96,6 @@ def _add_daily_features(df, historyPath, atmIv):
 
 
 def _add_chain_features(df):
-    # Replicates preprocess.py Pass 4 chain aggregation. groupby('timestamp')
-    # collapses to a simple aggregate since inference uses a single snapshot.
     isCall = df['right'] == 1.0
     isPut = df['right'] == 0.0
     nearAtm = (df['moneyness'] >= 0.97) & (df['moneyness'] <= 1.03)
@@ -167,7 +158,6 @@ def _add_chain_features(df):
 
 
 def _add_contract_features(df):
-    # Exact replica of data_utils.Features._prepare() derived column logic.
     df['theta_ratio'] = df['theta'] / df['ask']
     df['delta_dte'] = df['delta'] * df['dte']
 
@@ -187,13 +177,18 @@ def _add_contract_features(df):
     return df
 
 
-# Orchestrates all feature computation for live inference.
 def build_features(chainData, minuteBars, historyPath, atmIv):
     df = chainData.copy()
 
     df['right'] = df['right'].map({'CALL': 1.0, 'PUT': 0.0})
     df['open_interest'] = df['open_interest'].fillna(0.0)
     df['count'] = df['count'].fillna(0.0)
+
+    # Snapshot endpoints return volume=0 before the first trade of the day.
+    # The training filter requires volume >= 1 (active bar filter).
+    # At inference we care about liquidity (open_interest), not intraday volume.
+    # Clip to 1 so the filter passes - open_interest handles the liquidity gate.
+    df['volume'] = df['volume'].clip(lower=1)
 
     df = _add_chain_features(df)
     df = _add_spy_momentum(df, minuteBars)
@@ -203,8 +198,6 @@ def build_features(chainData, minuteBars, historyPath, atmIv):
     return df
 
 
-# Appends today's row to the history file.
-# Must be called at end of each trading day before the next morning's inference run.
 def update_history(historyPath, atmIv, minuteBars):
     historyFile = Path(historyPath)
     today = pd.Timestamp.now().normalize()
@@ -223,11 +216,11 @@ def update_history(historyPath, atmIv, minuteBars):
         netMove = 1e-8
 
     newRow = pd.DataFrame([{
-        'date': today,
-        'atm_iv': atmIv if atmIv is not None else np.nan,
-        'daily_rv': dailyRv,
+        'date':             today,
+        'atm_iv':           atmIv if atmIv is not None else np.nan,
+        'daily_rv':         dailyRv,
         'realized_abs_sum': realizedAbsSum,
-        'net_move': netMove,
+        'net_move':         netMove,
     }])
 
     if historyFile.exists() and historyFile.stat().st_size > 0:

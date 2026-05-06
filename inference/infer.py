@@ -133,8 +133,6 @@ def _run_nn(featureData, artifacts):
     return result
 
 
-# Loads all model artifacts for GBT and NN from deployment_models/{TRADE_MODE}/.
-# Call once at startup from run_dynamic.py or run_fixed.py - not on every inference cycle.
 def load_artifacts():
     print(f"[infer] Loading artifacts for mode: {TRADE_MODE}")
     gbtArtifacts = _load_gbt_artifacts()
