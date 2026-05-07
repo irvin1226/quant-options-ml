@@ -9,8 +9,8 @@ TARGET_RETURN         = 0.07
 STOP_LOSS             = 0.05
 RESCAN_INTERVAL_SEC   = 300
 ET                    = ZoneInfo('America/New_York')
-MONITOR_CUTOFF_HOUR   = 15
-MONITOR_CUTOFF_MINUTE = 55
+MONITOR_CUTOFF_HOUR   = 16
+MONITOR_CUTOFF_MINUTE = 5
 
 
 def build_occ_symbol(expiration, strike, right):

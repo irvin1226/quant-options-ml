@@ -439,7 +439,7 @@ async def _rescan_loop(rescan_fn):
                 if _stream is None:
                     await _start_stream(new_symbols)
                 else:
-                    _stream.subscribe_quotes(_quote_handler, *new_symbols)
+                    await asyncio.to_thread(_stream.subscribe_quotes, _quote_handler, *new_symbols)
                     print(f"{LOG_PREFIX} Subscribed {len(new_symbols)} new symbol(s) to stream.")
         except Exception as e:
             print(f"{LOG_PREFIX} Rescan failed: {e}")
@@ -467,7 +467,7 @@ async def _run_all(rescan_fn):
     while is_before_cutoff():
         await asyncio.sleep(30)
 
-    print(f"{LOG_PREFIX} Monitoring cutoff reached (15:55 ET).")
+    print(f"{LOG_PREFIX} Monitoring cutoff reached (16:05 ET).")
     if _stream is not None:
         try:
             await _stream.stop_ws()

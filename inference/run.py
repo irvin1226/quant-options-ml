@@ -105,6 +105,7 @@ def main():
             return []
 
         print(f"[run.py] Rescan: {len(newSignals)} signal(s).")
+        print(newSignals[['expiration', 'strike', 'right', 'ask', 'gbt_score', 'nn_score', 'nn_abstained']].to_string(index=False))
         return execute.place_additional_orders(newSignals)
 
     print("[run.py] Starting execute loop...")
@@ -116,7 +117,10 @@ def main():
             features.update_history(HISTORY_PATH, lastAtmIv[0], lastMinuteBars[0])
         else:
             print("[run.py] No ATM IV collected - skipping history update.")
+        print("[run.py] Shutting down ThetaData Terminal...")
+        subprocess.run(["pkill", "-f", THETADATA_JAR], capture_output=True)
 
+    print("[run.py] Market is closed. Awaiting next trading day.")
     print("[run.py] Done.")
 
 
