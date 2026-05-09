@@ -203,7 +203,6 @@ def get_spy_minute_bars(tradingDate=None):
             timeframe=TimeFrame.Minute,
             start=marketOpen,
             end=marketClose,
-            feed='iex'
         )
 
         barsResponse = alpacaClient.get_stock_bars(request)

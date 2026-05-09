@@ -10,6 +10,7 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 BLEND_ALPHA       = 0.6
 MC_DROPOUT_PASSES = 5
+NN_INFLUENCE      = 0.15
 
 TRADE_MODE = os.environ.get("TRADE_MODE", "dynamic")
 
@@ -140,8 +141,18 @@ def load_artifacts():
     return gbtArtifacts, nnArtifacts
 
 
-# Runs inference for both models on the prepared feature DataFrame.
-# GBT is the primary signal. NN scores are attached for reference.
+def _logit(probability):
+    clipped = np.clip(probability, 1e-6, 1 - 1e-6)
+    return np.log(clipped / (1 - clipped))
+
+
+def _sigmoid(logitValue):
+    return 1.0 / (1.0 + np.exp(-logitValue))
+
+
+# NN threshold is the neutral reference point: when nn_score == nn_threshold,
+# combined score equals the raw GBT score. A pessimistic NN penalizes; a
+# confident NN above its threshold can rescue a borderline GBT signal.
 def get_signals(featureData, gbtArtifacts, nnArtifacts):
     if featureData.empty:
         return pd.DataFrame()
@@ -155,7 +166,14 @@ def get_signals(featureData, gbtArtifacts, nnArtifacts):
     joinColumns = ['expiration', 'strike', 'right']
     signals = gbtResult.merge(nnResult, on=joinColumns, how='left')
 
-    gbtFired = signals['gbt_passes_threshold']
-    signals  = signals[gbtFired].reset_index(drop=True)
+    nnThreshold  = nnArtifacts['threshold']
+    gbtThreshold = gbtArtifacts['threshold']
+
+    nnDeviation              = _logit(signals['nn_score']) - _logit(nnThreshold)
+    combinedLogit            = _logit(signals['gbt_score']) + NN_INFLUENCE * nnDeviation
+    signals['combined_score'] = _sigmoid(combinedLogit)
+
+    passesThreshold = signals['combined_score'] >= gbtThreshold
+    signals         = signals[passesThreshold].reset_index(drop=True)
 
     return signals

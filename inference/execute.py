@@ -207,7 +207,7 @@ def _place_orders(client, signals):
             print(f"{LOG_PREFIX} At max positions ({MAX_POSITIONS}). No new orders.")
         else:
             new_rows       = []
-            signals_ranked = signals.sort_values('gbt_score', ascending=False)
+            signals_ranked = signals.sort_values('combined_score', ascending=False)
 
             for row in signals_ranked.head(available_slots).itertuples(index=False):
                 occ_symbol   = build_occ_symbol(row.expiration, row.strike, row.right)
@@ -255,7 +255,7 @@ def place_additional_orders(signals):
 
     new_symbols    = []
     new_rows       = []
-    signals_ranked = signals.sort_values('gbt_score', ascending=False)
+    signals_ranked = signals.sort_values('combined_score', ascending=False)
 
     for row in signals_ranked.head(available_slots).itertuples(index=False):
         occ_symbol   = build_occ_symbol(row.expiration, row.strike, row.right)
@@ -411,7 +411,7 @@ async def _start_stream(symbols):
     global _stream
     api_key    = os.environ["ALPACA_API_KEY"]
     secret_key = os.environ["ALPACA_SECRET_KEY"]
-    _stream    = OptionDataStream(api_key, secret_key, feed=OptionsFeed.INDICATIVE)
+    _stream    = OptionDataStream(api_key, secret_key, feed=OptionsFeed.OPRA)
     _stream.subscribe_quotes(_quote_handler, *symbols)
     asyncio.create_task(_stream_task())
     print(f"{LOG_PREFIX} WebSocket started for {len(symbols)} symbol(s).")
